@@ -5,8 +5,8 @@ using namespace std;
 int main() {
 	int Operacion;
 	float Num1, Num2, Resultado;
-	std::cout << "--- Operaciones b醩icas ---\n\n";
-	std::cout << "Escribe la operaci髇 por hacer.\n 1)Suma | 2)Resta | 3) Multiplicaci髇 |4)Divisi髇 |5)Potenciaci髇 |6)Radicaci髇\n";
+	std::cout << "--- Operaciones b谩sicas ---\n\n";
+	std::cout << "Escribe la operaci贸n por hacer.\n 1)Suma | 2)Resta | 3) Multiplicaci贸n |4)Divisi贸n |5)Potenciaci贸n |6)Radicaci贸n\n";
 	std::cin >> Operacion;
 	switch (Operacion){
 		case 1:
@@ -34,7 +34,7 @@ int main() {
 			std::cout<< "\n\nEl resultado es de " << Resultado;
 			break;
 		case 4:
-			std::cout << "Inserta el dividendo.\n";
+			std::cout << "\nInserta el dividendo.\n";
 			std::cin >>Num1;
 			std::cout << "Inserta el divisor.\n";
 			std::cin >> Num2;
@@ -42,7 +42,7 @@ int main() {
 			std::cout<< "\n\nEl resultado es de " << Resultado;
 			break;
 		case 5:
-			std::cout << "Inserta la base.\n";
+			std::cout << "\nInserta la base.\n";
 			std::cin >>Num1;
 			std::cout << "Inserta el exponente.\n";
 			std::cin >> Num2;
@@ -50,15 +50,15 @@ int main() {
 			std::cout<< "\n\nEl resultado es de " << Resultado;
 			break;
 		case 6:
-			std::cout << "Inserta el radicando.";
+			std::cout << "\nInserta el radicando.\n";
 			std::cin >>Num1;
-			std::cout << "Inserta el 韓dice.";
+			std::cout << "Inserta el 铆ndice.\n";
 			std::cin >> Num2;
 			Resultado=pow(Num1,1/Num2);
 			std::cout<< "El resultado es de " << Resultado;
 			break;
 		default:
-			std::cout<<"Operaci髇 no reconocida.";
+			std::cout<<"Operaci贸n no reconocida.";
 			break;
 	}
 	std::cout << "\n\n\nRecuerda que en el mundo hay genios y talentos.";
