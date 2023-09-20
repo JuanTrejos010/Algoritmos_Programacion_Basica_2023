@@ -18,10 +18,10 @@ int main(){
 	int EdadMenor=Edades[0];
 	for (Cont=0; Cont<NumP; Cont+=1){
 		std::cout << Edades[Cont] << " | ";
-		if(Edades[0]>EdadMayor){
+		if(Edades[Cont]>EdadMayor){
 			EdadMayor=Edades[Cont];
 		}
-		if(Edades[0]<EdadMenor){
+		if(Edades[Cont]<EdadMenor){
 			EdadMenor=Edades[Cont];
 		}
 	}
