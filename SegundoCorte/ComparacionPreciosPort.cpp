@@ -2,8 +2,8 @@
 
 int main() {
 	char NombreProducto[40];
-	int Iteracion, Precios[2], Sumatoria=0, Promedio;
-	std::cout << "¿Qué producto desea comparar?\n";
+	int Iteracion, Precios[3], Sumatoria=0, Promedio;
+	std::cout << "Â¿QuÃ© producto desea comparar?\n";
 	std::cin >> NombreProducto;
 	std::cout << "\n\n Precios en euros:\n";
 	for (Iteracion=0;Iteracion<3;Iteracion++) {
