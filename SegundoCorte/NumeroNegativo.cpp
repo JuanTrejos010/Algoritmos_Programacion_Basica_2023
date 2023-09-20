@@ -1,14 +1,14 @@
-#include <stdio.h>
+#include <iostream>
 
 int main(){
 	float Num;
-	printf("Inserta el número:\n");
-	scanf("%d", &Num);
+	std::cout << "Inserta el nÃºmero: ";
+	std::cin >> Num;
 	if (Num>0){
-		printf("%d es positivo.");
+		std::cout << Num << " es positivo.";
 	} else if (Num==0){
-		printf("%d es neutro.");
+		std::cout << Num << " es neutro.";
 	} else {
-		printf("%d es negativo.");
+		std::cout << Num << " es negativo.";
 	}
 }
