@@ -13,7 +13,6 @@ int main(){
 		Sumatoria+=Edades[Cont];
 	}
 	Promedio=Sumatoria/NumP;
-	std::cout << "\nPromedio: " << Promedio << "\n";
 	int EdadMayor=Edades[0];
 	int EdadMenor=Edades[0];
 	for (Cont=0; Cont<NumP; Cont+=1){
@@ -26,6 +25,7 @@ int main(){
 		}
 	}
 	std::cout << "\n\n";
+	std::cout << "\nPromedio: " << Promedio << "\n";
 	std::cout << "\n\n";
 	std::cout << "Edad menor: " << EdadMenor;
 	std::cout << "\nEdad mayor: " << EdadMayor;
