@@ -4,7 +4,7 @@ int main(){
 	int NumP,Cont,Sumatoria=0, Promedio;
 	std::cout << "¿Cuántas personas hay?\n";
 	std::cin >> NumP;
-	int Edades[NumP-1];
+	int Edades[NumP];
 	std::cout << "\n\n";
 	for (Cont=0; Cont<NumP; Cont+=1){
 		std::cout << "Edad\n";
