@@ -4,10 +4,10 @@
 int main() {
 	std::string Datos[5];
 	int Opcion;
-	std::cout << "Seleccionar opci髇:\n 1)Adicionar 2) Consultar 3)Eliminar 4)Salir\n\n";
+	std::cout << "Seleccionar opci贸n:\n 1)Adicionar 2) Consultar 3)Eliminar 4)Salir\n\n";
 	std::cin >> Opcion;
 	while (Opcion<1 || Opcion>4) {
-		std::cout << "Opci髇 inv醠ida.\n"
+		std::cout << "Opci贸n inv谩lida.\n";
 		std::cin >> Opcion;
 	}
 	switch(Opcion) {
@@ -15,7 +15,7 @@ int main() {
 			//Adicionar
 			for (int count=0;count<5;count++) {
 				if (count==0) {
-					std::cout << "C閐ula: ";
+					std::cout << "C茅dula: ";
 				} else if (count==1) {
 					std::cout << "Nombre: ";
 				} else if (count==2) {
@@ -23,7 +23,7 @@ int main() {
 				} else if (count==3) {
 					std::cout << "Salario: ";
 				} else if (count==4) {
-					std::cout << "Afici髇: ";
+					std::cout << "Afici贸n: ";
 				}
 				std::cin >> Datos[count];
 			}
@@ -32,7 +32,7 @@ int main() {
 			//Mostrar
 			for (int count=0;count<5;count++) {
 				if (count==0) {
-					std::cout << "C閐ula: ";
+					std::cout << "C茅dula: ";
 				} else if (count==1) {
 					std::cout << "Nombre: ";
 				} else if (count==2) {
@@ -40,16 +40,16 @@ int main() {
 				} else if (count==3) {
 					std::cout << "Salario: ";
 				} else if (count==4) {
-					std::cout << "Afici髇: ";
+					std::cout << "Afici贸n: ";
 				}
-				std::cout >> Datos[count];
+				std::cout << Datos[count];
 			}
 		break;
 		case 3:
 			//Eliminar
 			for (int count=0;count<5;count++) {
 				Datos[count]=" ";
-				std::cout << "Datos eliminados."
+				std::cout << "Datos eliminados.";
 			}
 		break;
 		case 4:
