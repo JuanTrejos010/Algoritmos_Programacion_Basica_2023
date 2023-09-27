@@ -4,7 +4,7 @@
 int main() {
 	std::string Datos[5];
 	int Opcion;
-	std::cout << "Seleccionar opción:\n 1)Adicionar 2) Consultar 3)Eliminar 4)Salir\n\n";
+	std::cout << "  ---Base de datos---\nSeleccionar opción:\n\n1)Adicionar 2) Consultar 3)Eliminar 4)Salir\n\n";
 	std::cin >> Opcion;
 	while (Opcion<1 || Opcion>4) {
 		std::cout << "Opción inválida.\n";
@@ -42,15 +42,15 @@ int main() {
 				} else if (count==4) {
 					std::cout << "Afición: ";
 				}
-				std::cout << Datos[count];
+				std::cout << Datos[count] << std::endl;
 			}
 		break;
 		case 3:
 			//Eliminar
 			for (int count=0;count<5;count++) {
 				Datos[count]=" ";
-				std::cout << "Datos eliminados.";
 			}
+			std::cout << "Datos eliminados.";
 		break;
 		case 4:
 			//Salir
